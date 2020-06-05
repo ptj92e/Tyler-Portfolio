@@ -1,0 +1,39 @@
+nav {
+    display: block;
+    text-align: center;
+}
+nav h2 {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 45px;
+    color: rgb(16,64,132);
+}
+.uk-navbar-center {
+    height: 40px;
+    margin-top: 60px;
+}
+.uk-navbar-center li {
+    height: 100%;
+}
+.active-link {
+    border-bottom: 2px solid rgb(16,64,132);
+}
+nav button {
+    background-color: transparent;
+    border: none;
+}
+.uk-navbar-toggle {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#offCanvasNav {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+}
+#offCanvasNav li {
+    list-style: none;
+    margin-top: 10px;
+    font-size: 20px;
+}
