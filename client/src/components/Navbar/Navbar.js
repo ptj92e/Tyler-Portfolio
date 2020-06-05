@@ -5,11 +5,13 @@ import "./Navbar.css";
 function Navbar() {
     return (
         <div>
-            <nav className="uk-navbar-contianer" uk-navbar="mode: click">
-                <h2>Tyler Bouttavong</h2>
-                <div className="uk-navbar-center">
-
-                    <ul className="uk-navbar-nav uk-visible@s">
+            <nav>
+                <div id="title">
+                    <h2>Tyler Bouttavong</h2>
+                    <button type="button" uk-toggle="target: #offcanvas-nav" className="uk-navbar-toggle uk-hidden@s"><i className="fas fa-bars fa-2x"></i></button>
+                </div>
+                <div id="navLinks">
+                    <ul className="uk-visible@s">
                         <li>
                             <NavLink
                                 exact={true}
@@ -48,13 +50,13 @@ function Navbar() {
                         </li>
                     </ul>
                 </div>
-                <button type="button" uk-toggle="target: #offcanvas-nav" className="uk-navbar-toggle uk-hidden@s"><i className="fas fa-bars fa-2x"></i></button>
                 <div id="offcanvas-nav" uk-offcanvas="true">
                     <div className="uk-offcanvas-bar">
                         <button className="uk-offcanvas-close" type="button" uk-close="true"></button>
                         <ul id="offCanvasNav">
                             <li>
                                 <NavLink
+                                    exact={true}
                                     activeClassName="active-link"
                                     className="link"
                                     to="/">Home
