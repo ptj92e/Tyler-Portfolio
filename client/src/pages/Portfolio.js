@@ -6,6 +6,7 @@ import Home from "../pages/Home";
 import Inquires from "../pages/Inquires";
 import Media from "../pages/Media";
 import Social from "../pages/Social";
+import Footer from "../components/Footer/Footer";
 
 function Portfolio() {
     return (
@@ -19,6 +20,7 @@ function Portfolio() {
                     <Route exact path="/media" component={Media} />
                     <Route exact path="/social" component={Social} />
                 </div>
+                <Footer />
             </Router>
         </div>
     );

@@ -37,8 +37,8 @@ nav button {
 }
 .uk-navbar-toggle {
     position: absolute;
-    top: 40px;
-    right: -60px;
+    top: 45px;
+    right: -45px;
 }
 #offCanvasNav {
     margin-top: 20px;

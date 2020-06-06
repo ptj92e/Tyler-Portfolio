@@ -1,17 +1,49 @@
+#container {
+    justify-content: center;
+    display: flex;
+}
 #welcome {
     width: 80%;
     margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: inline-flex;
+    border-top: 2px solid rgb(131, 131, 131);
+    border-bottom: 2px solid rgb(131, 131, 131);
+    position: relative;
 }
 #welcome p {
-    width: 50%;
+    width: 40%;
     font-size: 40px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-#welcome hr {
-    border: 1px solid rgb(131, 131, 131);
+#welcome img {
+    height: auto;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
+}
+#blueDiv {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(16,64,132);
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    z-index: 1;
+}
+#grayDiv {
+    height: 300px;
+    width: 300px;
+    border: 2px solid rgb(131, 131, 131);
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    z-index: 2;
 }
 #topHR {
     margin-bottom: 40px;
