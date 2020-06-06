@@ -10,9 +10,18 @@
     color: rgb(16,64,132);
 }
 #personalStatement p {
-    width: 60%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
+    margin-bottom: 30px;
     font-size: 20px;
+}
+#personalStatement a {
+    padding: 10px;
+    font-size: 25px;
+    color:rgb(16,64,132);
+}
+#personalStatement a:hover {
+    color: rgb(130, 183, 220);
+    text-decoration: none;
 }

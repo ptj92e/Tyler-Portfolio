@@ -11,7 +11,6 @@
     display: inline-flex;
     border-top: 2px solid rgb(131, 131, 131);
     border-bottom: 2px solid rgb(131, 131, 131);
-    position: relative;
 }
 #welcome p {
     width: 40%;
@@ -20,29 +19,35 @@
     margin-left: auto;
     margin-right: auto;
 }
-#welcome img {
+#imgDiv {
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    position: relative;
+
+}
+#imgDiv img {
+    border: 1px solid rgb(131, 131, 131);
     height: auto;
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 60%;
     z-index: 3;
 }
 #blueDiv {
-    height: 300px;
-    width: 300px;
+    height: 90%;
+    width: 60%;
     background-color: rgb(16,64,132);
     position: absolute;
-    top: 80px;
-    right: 40px;
+    top: 40px;
+    right: 70px;
     z-index: 1;
 }
 #grayDiv {
-    height: 300px;
-    width: 300px;
+    height: 90%;
+    width: 60%;
     border: 2px solid rgb(131, 131, 131);
     position: absolute;
-    top: 30px;
-    right: 60px;
+    top: -20px;
+    right: 90px;
     z-index: 2;
 }
 #topHR {
@@ -51,4 +56,49 @@
 #bottomHR {
     margin-top: 40px;
     margin-bottom: 20px;
+}
+@media only screen and (max-width: 1200px) {
+    #imgDiv {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    #welcome p {
+        width: 50%;
+        font-size: 35px;
+    }
+    #imgDiv {
+        width: 40%;
+    }
+    #imgDiv img {
+        width: 90%;
+    }
+    #blueDiv {
+        right: 0px;
+    }
+    #grayDiv {
+        right: -10px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    #welcome p {
+        width: 50%;
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    #welcome {
+        display: block;
+    }
+    #welcome p {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+    #imgDiv {
+        width: 100%;
+    }
+    #grayDiv {
+        top: -10px;
+    }
 }

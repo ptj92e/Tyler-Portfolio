@@ -1,0 +1,49 @@
+#biography {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#biography img {
+    float: right;
+    height: auto;
+    width: 30%;
+    margin: 10px;
+    border: 1px solid rgb(131, 131, 131);
+}
+#biography p {
+    font-size: 20px;
+    display: flex;
+}
+@media only screen and (max-width: 1200px) {
+    #biography p {
+        font-size: 18px;
+    }
+    #biography img {
+        width: 35%;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    #biography p {
+        font-size: 16px;
+    }
+    #biography img {
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    #biography p {
+        font-size: 14px;
+    }
+    #biography img {
+        width: 55%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    #biography p {
+        font-size: 16px;
+    }
+    #biography img {
+        float: none;
+        width: 100%;
+    }
+}
