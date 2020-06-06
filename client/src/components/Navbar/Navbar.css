@@ -3,7 +3,7 @@ nav {
 }
 nav h2 {
     margin-top: 20px;
-    font-size: 45px;
+    font-size: 55px;
     color: rgb(16,64,132);
 }
 #navLinks ul {
@@ -16,7 +16,7 @@ nav h2 {
     font-size: 20px;
 }
 #navLinks ul li a {
-    color: rgb(128,128,128);
+    color: rgb(96, 96, 96);
 }
 #navLinks ul li a:hover {
     color: rgb(28,28,28);
@@ -33,10 +33,12 @@ nav button {
 #title {
     align-items: center;
     display: inline-flex;
+    position: relative;
 }
 .uk-navbar-toggle {
-    margin-left: 100px;
-    margin-top: 10px;
+    position: absolute;
+    top: 40px;
+    right: -60px;
 }
 #offCanvasNav {
     margin-top: 20px;
@@ -46,4 +48,8 @@ nav button {
     list-style: none;
     margin-top: 10px;
     font-size: 20px;
+}
+#offCanvasNav li a:hover {
+    color: rgb(16,64,132);
+    text-decoration: none;
 }

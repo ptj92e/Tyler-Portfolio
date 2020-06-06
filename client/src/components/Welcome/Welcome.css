@@ -1,0 +1,22 @@
+#welcome {
+    width: 80%;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+#welcome p {
+    width: 50%;
+    font-size: 40px;
+    text-align: center;
+}
+#welcome hr {
+    border: 1px solid rgb(131, 131, 131);
+}
+#topHR {
+    margin-bottom: 40px;
+}
+#bottomHR {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
